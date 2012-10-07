@@ -1,0 +1,12 @@
+OpenEmbedded/KNP BSP layer for KNP Project
+==========================================================
+
+This layer provides support for KNP platforms for use with
+OpenEmbedded and/or Yocto.
+
+This layer depends on:
+
+URI: git://git.openembedded.org/openembedded-core
+branch: denzil
+revision: HEAD
+
