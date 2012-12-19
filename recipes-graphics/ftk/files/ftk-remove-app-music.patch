@@ -1,0 +1,6 @@
+diff -urN ftk/apps/Makefile.am ftk-modified/apps/Makefile.am
+--- ftk/apps/Makefile.am	2012-06-28 18:46:03.000000000 +0900
++++ ftk-modified/apps/Makefile.am	2012-12-19 22:43:26.022635047 +0900
+@@ -1 +1 @@
+-SUBDIRS=launcher desktop calculator shell filemanager common gallery music
++SUBDIRS=launcher desktop calculator shell filemanager common gallery
