@@ -1,10 +1,10 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
-PRINC := "${@int(PRINC) + 10}"
+PRINC := "${@int(PRINC) + 20}"
 
-SRCREV_mxs = "827f28552119b69f10e0428199d1c30fd63f13e2"
+SRCREV_imx23knp = "9c340ba75b0ceab825d370781a3e7d317bc8810c"
 
-SRC_URI = "git://github.com/cyox93/linux-imx.git \
+SRC_URI_imx23knp = "git://github.com/cyox93/linux-imx.git;branch=linux-imx-knp \
            file://defconfig \
 "
 
