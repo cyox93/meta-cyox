@@ -1,0 +1,14 @@
+Binary files imx-bootlets-src-10.12.01-origin/boot_prep/.init-mx23.c.swp and imx-bootlets-src-10.12.01/boot_prep/.init-mx23.c.swp differ
+diff -urN imx-bootlets-src-10.12.01-origin/boot_prep/init-mx23.c imx-bootlets-src-10.12.01/boot_prep/init-mx23.c
+--- imx-bootlets-src-10.12.01-origin/boot_prep/init-mx23.c	2012-12-23 22:11:04.992231630 +0900
++++ imx-bootlets-src-10.12.01/boot_prep/init-mx23.c	2012-12-23 22:11:43.616231540 +0900
+@@ -31,7 +31,8 @@
+ #include <stdarg.h>
+ 
+ #define PIN_DRIVE_12mA 2
+-//#define EMI_96M
++#define MEM_MDDR
++#define EMI_96M
+  /* Debug uart have been init by boot rom. */
+ void putc(char ch)
+ {
