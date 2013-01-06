@@ -8,12 +8,12 @@ HOMEPAGE = "http://code.google.com/p/ftk"
 DEPENDS = "sysfsutils lua5.1 jpeg libpng freetype zlib tslib"
 
 RV = "0.6.3"
-PR = "r1"
+PR = "r2"
 
 SRC_URI = "git://github.com/cyox93/ftk.git \
 		file://desktop.sh"
 
-SRCREV_imx23knp = "226c31d612f1eac998f38dad9fdab62595641ce0"
+SRCREV_imx23knp = "8f60e89dba7a580158f748fda4a4ae28962ad95e"
 
 S = "${WORKDIR}/git"
 
