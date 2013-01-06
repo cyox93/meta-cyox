@@ -10,4 +10,5 @@ inherit core-image
 IMAGE_INSTALL += " \
 	mtd-utils \
 	ftk \
+	madplay \
 	"
