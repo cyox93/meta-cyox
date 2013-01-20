@@ -1,0 +1,160 @@
+state.EVK {
+	control.1 {
+		iface MIXER
+		name 'DAC Playback Volume'
+		value.0 15
+		value.1 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 15'
+		}
+	}
+	control.2 {
+		iface MIXER
+		name 'DAC Playback Switch'
+		value.0 false
+		value.1 false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 2
+		}
+	}
+	control.3 {
+		iface MIXER
+		name 'HP Playback Volume'
+		value.0 115
+		value.1 115
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 127'
+		}
+	}
+	control.4 {
+		iface MIXER
+		name 'ADC Capture Volume'
+		value.0 254
+		value.1 254
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 255'
+		}
+	}
+	control.5 {
+		iface MIXER
+		name 'ADC PGA Capture Volume'
+		value.0 2
+		value.1 2
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 15'
+		}
+	}
+	control.6 {
+		iface MIXER
+		name 'ADC PGA Capture Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.7 {
+		iface MIXER
+		name 'Mic PGA Capture Volume'
+		value 1
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 3'
+		}
+	}
+	control.8 {
+		iface MIXER
+		name '3D effect'
+		value Off
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Off
+			item.1 Low
+			item.2 Medium
+			item.3 High
+		}
+	}
+	control.9 {
+		iface MIXER
+		name 'HP Mux'
+		value 'DAC Out'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'DAC Out'
+			item.1 'Line In 1'
+		}
+	}
+	control.10 {
+		iface MIXER
+		name 'Right ADC Mux'
+		value Mic
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Mic
+			item.1 'Line In 1'
+			item.2 'Head Phone'
+			item.3 'Line In 2'
+		}
+	}
+	control.11 {
+		iface MIXER
+		name 'Left ADC Mux'
+		value Mic
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Mic
+			item.1 'Line In 1'
+			item.2 'Head Phone'
+			item.3 'Line In 2'
+		}
+	}
+	control.12 {
+		iface MIXER
+		name 'HP Playback Switch'
+		value on
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 off
+			item.1 on
+		}
+	}
+	control.13 {
+		iface MIXER
+		name 'Speaker Playback Switch'
+		value on
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 off
+			item.1 on
+		}
+	}
+}

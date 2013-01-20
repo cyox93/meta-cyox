@@ -11,6 +11,7 @@ RV = "0.6.3"
 PR = "r2"
 
 SRC_URI = "git://github.com/cyox93/ftk.git \
+		file://asound.state \
 		file://desktop.sh"
 
 SRCREV_imx23knp = "8298d93cafb2a6d69ab84713c9a14443aba5c712"
@@ -35,6 +36,7 @@ do_configure() {
 do_install_prepend() {
 	install -d ${D}${sysconfdir}/init.d 
 	install -m 0755 ${WORKDIR}/desktop.sh ${D}${sysconfdir}/init.d/zdesktop.sh
+	install -m 0755 ${WORKDIR}/asound.state ${D}${sysconfdir}/asound.state
 }
 
 FILES_${PN} += "${libdir}/*${SOLIBS}"
