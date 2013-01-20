@@ -13,7 +13,7 @@ PR = "r2"
 SRC_URI = "git://github.com/cyox93/ftk.git \
 		file://desktop.sh"
 
-SRCREV_imx23knp = "8f60e89dba7a580158f748fda4a4ae28962ad95e"
+SRCREV_imx23knp = "8298d93cafb2a6d69ab84713c9a14443aba5c712"
 
 S = "${WORKDIR}/git"
 
@@ -24,7 +24,7 @@ INITSCRIPT_PARAMS = "start 99 5 ."
 
 PARALLEL_MAKE = ""
 
-EXTRA_OECONF = "--disable-gtk-doc-html --enable-knp --with-fontengine=freetype"
+EXTRA_OECONF = "--disable-gtk-doc-html --enable-knp --with-fontengine=freetype --enable-tslib"
 
 do_configure() {
 	cd ${S}
